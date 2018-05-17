@@ -1,0 +1,2 @@
+# projekt-r
+Skkrypty
