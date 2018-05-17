@@ -1,0 +1,23 @@
+# utwórz 4 wektory
+kwartal_1 <- c("Styczeń","Luty","Marzec")
+kwartal_2 <- c("Kwiecień","Maj","Czerwiec")
+kwartal_3 <- c("Lipiec","Sierpień","Wrzesień")
+kwartal_4 <- c("Październik","Listopad","Grudzień")
+# utwórz wektor rok
+rok <- c(kwartal_1,kwartal_2,kwartal_3,kwartal_4)
+# dwa pierwsze miesiące roku
+rok[1:2]  
+# pięć ostatnich miesięcy roku
+rok[8:12]   
+# miesiące nieparzyste
+rok[c(2,4,6,8,10,12)]   
+# liczba liter każdego miesiąca
+nchar(rok)
+#  średnia i odchylenie standardowe ilości liter dla wszystkich miesięcy w roku
+mean(nchar(rok))
+sd(nchar(rok))
+# dla miesięcy zimowych
+mean(nchar(rok[c(1,2,3,12)]))
+sd(nchar(rok[c(1,2,3,12)]))
+# miesiące kończące się na "-ec"
+subset(rok, endsWith(rok,"ec")) 
